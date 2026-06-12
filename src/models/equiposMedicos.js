@@ -1,0 +1,12 @@
+/*
+equipmentName,
+description,
+brand,
+model,
+purchaseDate,
+maintenanceDate,
+condition,
+image,
+status,
+isAvailable
+*/
