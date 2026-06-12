@@ -1,17 +1,17 @@
 import multer from "multer"
-import { v2 as cloudinary } from "cloudinary";
-import {cloudinaryStorage} from "multer-storage-cloudinary";
+import { v2 as cloudinary } from "Cloudinary";
+import {CloudinaryStorage} from "multer-storage-cloudinary";
 import { config } from "../config.js";
 
 
 
-cloudinary.config({
+cloudinary.config({ 
     cloud_name: config.cloudinary.cloudinary_name,
     api_key: config.cloudinary.cloudinary_api_key,
     api_secret: config.cloudinary.cloudinary_api_secret,
 });
 
-const storage = new cloudinaryStorage({
+const storage = new CloudinaryStorage({
     cloudinary,
     params: {
         folder: "",
